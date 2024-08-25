@@ -1,6 +1,7 @@
 // Write your JavaScript code here!
 
 // TASK 2: ADD VALIDATION
+//adds an event listener to the document to listen for the submit event.
 document.addEventListener("submit", function(event) {
   event.preventDefault();
   
@@ -14,6 +15,7 @@ document.addEventListener("submit", function(event) {
 });
 
 // PART 3: FETCH PLANETARY DATA
+// adds an event listener to the window object that triggers when the page loads.
 window.addEventListener("load", function(event) {  
   let listedPlanets;
   let listedPlanetsResponse = myFetch();
@@ -25,7 +27,7 @@ window.addEventListener("load", function(event) {
   }).then(function() {
       //picks a planet from the JSON
       let randomPlanet = pickPlanet(listedPlanets);
-      // adds info from the JSON to the chosen destination
+      // adds info from the JSON to the chosen destination and displays its information.
       addDestinationInfo(document, randomPlanet.name, randomPlanet.diameter, randomPlanet.star, randomPlanet.distance, randomPlanet.moons, randomPlanet.image);          
   });
 });

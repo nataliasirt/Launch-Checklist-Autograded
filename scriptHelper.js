@@ -64,7 +64,7 @@ function formSubmission(document, list, pilotName, copilotName, fuelLevel, cargo
 // gets all of the planets from JSON
 async function myFetch() {
   let planetsReturned;
-  
+  // fetches data from an API and returns the JSON response.
   planetsReturned = await fetch("https://handlers.education.launchcode.org/static/planets.json").then(function(response) {
       return response.json();
   });
