@@ -52,11 +52,11 @@ function validateInput(testInput) {
     if (isReadyForLaunch) {
         launchStatus.innerHTML = "Shuttle is Ready for Launch";
         launchStatus.style.color = "green";
-        list.style.visibility = "hidden";
+       // list.style.visibility = "hidden";
     } else {
         launchStatus.innerHTML = "Shuttle Not Ready for Launch";
         launchStatus.style.color = "red";
-        list.style.visibility = "visible";  // Only set this once here
+        list.style.visibility = "visible";  // Only this once here
     }
 }
   
